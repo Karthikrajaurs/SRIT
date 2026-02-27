@@ -9,7 +9,7 @@ public class UserDAO {
 
 //public class UserDAO {
 
-    private String jdbcURL = "jdbc:mysql://localhost:3307/logindb";
+    private String jdbcURL = System.getenv("MYSQL_URL");
     private String jdbcUsername = "root";
     private String jdbcPassword = "";
 
@@ -41,4 +41,5 @@ public class UserDAO {
 
         return status;
     }
+
 }
